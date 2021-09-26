@@ -1,0 +1,54 @@
+header {flex: 0 0 auto;}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 10px 0px;
+    background-color: rgba($color: $white, $alpha: .5);
+    box-shadow: 0 2px 8px rgba($color: $black, $alpha: .1);
+    z-index: 100;
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        flex-shrink: 0;
+        max-width: 40px;
+        height: 40px;
+        a {display: inline-block;}
+        img {width: 100%;}
+    }
+    &__basket {
+        position: relative;
+        height: 40px;
+        button {
+            width: 40px;
+            height: 40px;
+        }
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.basket-bage {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    width: 200px;
+    padding: 15px 10px;
+    background-color: rgba($color: $white, $alpha: .6);
+    border-radius: 10px;
+    z-index: 110;
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    &__title {font-weight: 500;}
+    &.active {display: block;}
+}

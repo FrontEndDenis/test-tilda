@@ -1,0 +1,20 @@
+.btn {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 18px;
+    transition: background-color $base-transition, color $base-transition;
+    &--green {
+        background-color: #17d88b;
+        color: $white;
+        &:hover {background-color: rgba($color: #17d88b, $alpha: .8);}
+        &:active {background-color: rgba($color: #17d88b, $alpha: .6);}
+    }
+
+    &:disabled {
+        background-color: rgba($color: $txt-white60, $alpha: .4);
+        color: $txt-black;
+    }
+}
